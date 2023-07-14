@@ -8,9 +8,9 @@ public class Employee {
     private String employeeId;
     private LocalDate dateOfEmployment;
     private double salary;
-    private String department;
+    private Department department;
 
-    public Employee(String firstName, String lastName, String employeeId, LocalDate dateOfEmployment, double salary, String department) {
+    public Employee(String firstName, String lastName, String employeeId, LocalDate dateOfEmployment, double salary, Department department) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.employeeId = employeeId;
@@ -60,11 +60,19 @@ public class Employee {
         this.salary = salary;
     }
 
-    public String getDepartment() {
+    public Department getDepartment() {
         return department;
     }
 
-    public void setDepartment(String department) {
+    public void setDepartment(Department department) {
+        if (this.department != null) {
+            this.department.removeEmployee(this);
+        }
+
         this.department = department;
+
+        if (department != null) {
+            department.addEmployee(this);
+        }
     }
 }
