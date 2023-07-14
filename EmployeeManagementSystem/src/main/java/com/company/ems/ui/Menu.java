@@ -32,8 +32,8 @@ public class Menu {
             System.out.println("1. Add an employee");
             System.out.println("2. Update an employee");
             System.out.println("3. Remove an employee");
-            System.out.println("4. List all employees");
-            System.out.println("5. Show an employee's information");
+            System.out.println("4. Show an employee's information");
+            System.out.println("5. List all employees");
             System.out.println("6. List all departments");
             System.out.println("7. Add a department");
             System.out.println("8. Update a department");
