@@ -9,4 +9,5 @@ Project Started at:
 Basic Requirements fulfilled at: 12:07
 
 Extensions include:
-- Nothing yet!
+- Department Class (added 12:50)
+- Testing (soon maybe?)
